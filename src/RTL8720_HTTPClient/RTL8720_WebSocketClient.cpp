@@ -211,7 +211,7 @@ int WiFiWebSocketClient::parseMessage()
 
   // make sure 2 bytes (opcode + length)
   // are available
-  if (WiFiHttpClient::available() < 2)
+  if (WiFiHttpClient::available() < 1)
   {
     return 0;
   }
