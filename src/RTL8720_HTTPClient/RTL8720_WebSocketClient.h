@@ -111,7 +111,7 @@ class WiFiWebSocketClient : public WiFiHttpClient
   private:
     bool      iTxStarted;
     uint8_t   iTxMessageType;
-    uint8_t   iTxBuffer[128];
+    uint8_t   iTxBuffer[4096];
     uint64_t  iTxSize;
 
     uint8_t   iRxOpCode;
